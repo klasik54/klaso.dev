@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    font-family: 'Inter', sans-serif;
+}
+
+::-moz-selection { /* Code for Firefox */
+    @apply text-rose-500;
+}
+
+::selection {
+    @apply text-rose-600;
+
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.container {
+    @apply max-w-4xl p-4;
+}
+
+p, a, li {
+    @apply text-lg text-gray-700;
+}
+
+.divider {
+    @apply h-2 w-full bg-gray-300 rounded-md;
+}
